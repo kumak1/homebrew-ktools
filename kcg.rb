@@ -5,20 +5,20 @@
 class Kcg < Formula
   desc "kumak1 Convenient Git tools."
   homepage "https://github.com/kumak1/kcg"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.2/kcg_0.0.2_darwin_arm64.tar.gz"
-      sha256 "5a8d2a95f1dcd5a831cf1e8a4ec14aa2d9a3f39e37957ab13bb47eb65735e83f"
+      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_darwin_arm64.tar.gz"
+      sha256 "65cf8affc55a4cdd9cacace124ee5f274430c5e7ee8291c65dbd7624107c864d"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.2/kcg_0.0.2_darwin_amd64.tar.gz"
-      sha256 "e8e2fc6f53c63e040f6efbe168927a1846c37e471e64b342ae99c07898c7fbe8"
+      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_darwin_amd64.tar.gz"
+      sha256 "71a1310ce31e049d81bb7d1c32c09ee7cb67884f2988f3797e74dc412ca8b925"
 
       def install
         bin.install Dir['kcg']
@@ -28,16 +28,16 @@ class Kcg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.2/kcg_0.0.2_linux_arm64.tar.gz"
-      sha256 "65b27ddb2e061e99b3dbdc4a273bd52598e65141933a0184a32a241ca3450128"
+      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_linux_arm64.tar.gz"
+      sha256 "0e88e2dee7dc51c8713a9a37008de4a605f8e877901d1c7a0cccd5730338fe8f"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.2/kcg_0.0.2_linux_amd64.tar.gz"
-      sha256 "e5d5e8a18576547c22096ad9032219f60aef22fdc79de8f47a0872591aa369b0"
+      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_linux_amd64.tar.gz"
+      sha256 "c2ed2ebd5501e14f3113de8377e1d1bc9c4263034d726d64b27853a9b8780dc6"
 
       def install
         bin.install Dir['kcg']
