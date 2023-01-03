@@ -5,20 +5,20 @@
 class Kcg < Formula
   desc "kumak1 Convenient Git tools."
   homepage "https://github.com/kumak1/kcg"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_darwin_arm64.tar.gz"
-      sha256 "65cf8affc55a4cdd9cacace124ee5f274430c5e7ee8291c65dbd7624107c864d"
+      url "https://github.com/kumak1/kcg/releases/download/0.0.4/kcg_0.0.4_darwin_arm64.tar.gz"
+      sha256 "4222e9b767737d0181b3a541b1368e1b10b5f936c084d460dbe589552d3fd655"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_darwin_amd64.tar.gz"
-      sha256 "71a1310ce31e049d81bb7d1c32c09ee7cb67884f2988f3797e74dc412ca8b925"
+      url "https://github.com/kumak1/kcg/releases/download/0.0.4/kcg_0.0.4_darwin_amd64.tar.gz"
+      sha256 "780d96e3676b2a9713ae28e8af40cf0be02bb2d4daae15df4ce6dec2c4544dd6"
 
       def install
         bin.install Dir['kcg']
@@ -28,16 +28,16 @@ class Kcg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_linux_arm64.tar.gz"
-      sha256 "0e88e2dee7dc51c8713a9a37008de4a605f8e877901d1c7a0cccd5730338fe8f"
+      url "https://github.com/kumak1/kcg/releases/download/0.0.4/kcg_0.0.4_linux_arm64.tar.gz"
+      sha256 "282f46011b69b6cdff21767977f79469437b7cfedab4d644f0a1c129895ca4f3"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/v0.0.3/kcg_0.0.3_linux_amd64.tar.gz"
-      sha256 "c2ed2ebd5501e14f3113de8377e1d1bc9c4263034d726d64b27853a9b8780dc6"
+      url "https://github.com/kumak1/kcg/releases/download/0.0.4/kcg_0.0.4_linux_amd64.tar.gz"
+      sha256 "c3ef96b8c368e60460ae32b6cb5a6c21817110339335e956bf5a5aaa5a45c0d6"
 
       def install
         bin.install Dir['kcg']
