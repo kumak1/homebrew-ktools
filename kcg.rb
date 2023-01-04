@@ -5,20 +5,20 @@
 class Kcg < Formula
   desc "kumak1 Convenient Git tools."
   homepage "https://github.com/kumak1/kcg"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kumak1/kcg/releases/download/0.0.8/kcg_0.0.8_darwin_arm64.tar.gz"
-      sha256 "1be50f21109cecebdd38f6f90cb7f3dd797f3edd7f596d2f4812f11e6c26b183"
+    if Hardware::CPU.intel?
+      url "https://github.com/kumak1/kcg/releases/download/0.0.9/kcg_0.0.9_darwin_amd64.tar.gz"
+      sha256 "259dad2af9ff316665b3eaa3d277115c98748ef06626e6b1e2ae63d3c366f422"
 
       def install
         bin.install Dir['kcg']
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.0.8/kcg_0.0.8_darwin_amd64.tar.gz"
-      sha256 "6eb049ed162d1135a032bb7d28da3dcfa6a12d665001fe6e7cfacbb01e9dd9db"
+    if Hardware::CPU.arm?
+      url "https://github.com/kumak1/kcg/releases/download/0.0.9/kcg_0.0.9_darwin_arm64.tar.gz"
+      sha256 "97c81d274192435a02b1aa4fc6e8e9050f74e06c3f0e77fe01c56bdaac1ce602"
 
       def install
         bin.install Dir['kcg']
@@ -27,17 +27,17 @@ class Kcg < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumak1/kcg/releases/download/0.0.8/kcg_0.0.8_linux_arm64.tar.gz"
-      sha256 "593f70ba3187241cae085ac020e82f8f70e7142c674e6c6f7405c4c9f17ea4d3"
+    if Hardware::CPU.intel?
+      url "https://github.com/kumak1/kcg/releases/download/0.0.9/kcg_0.0.9_linux_amd64.tar.gz"
+      sha256 "1326d3352631fba26ff0cfb610a9452f9d8d174ae6dfa1f2e8455d9f10db6c7e"
 
       def install
         bin.install Dir['kcg']
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.0.8/kcg_0.0.8_linux_amd64.tar.gz"
-      sha256 "de77ff156b6675f08e74d70150f507833eeb8aca9a4977308fee2638c9453894"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kumak1/kcg/releases/download/0.0.9/kcg_0.0.9_linux_arm64.tar.gz"
+      sha256 "7d65074ecf0a5cacf268795c2e7e38be11a5c7fc9c76c0ea8655aa3e0ab350fc"
 
       def install
         bin.install Dir['kcg']
