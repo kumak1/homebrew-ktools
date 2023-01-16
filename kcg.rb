@@ -5,20 +5,20 @@
 class Kcg < Formula
   desc "kumak1 Convenient Git tools."
   homepage "https://github.com/kumak1/kcg"
-  version "0.8.1"
+  version "0.8.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.1/kcg_0.8.1_darwin_amd64.tar.gz"
-      sha256 "c10191f93ff771cec3dbeadb3698a2a62692d8b0a58a1b97543739a7458a13ae"
+      url "https://github.com/kumak1/kcg/releases/download/0.8.2/kcg_0.8.2_darwin_amd64.tar.gz"
+      sha256 "982d243dea6324c49faed2988a3e8592bee0b9192c1128669fc751971d9d3271"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.1/kcg_0.8.1_darwin_arm64.tar.gz"
-      sha256 "57d6077c90c2f1a3181d32b711684246d520b3d0d1be4c54ad7c8e5bd4213f2c"
+      url "https://github.com/kumak1/kcg/releases/download/0.8.2/kcg_0.8.2_darwin_arm64.tar.gz"
+      sha256 "c2bcb177e71359f72a7d9952ea2bef57fe3313a5b608ebe6e46208f0e1e9e9a9"
 
       def install
         bin.install Dir['kcg']
@@ -28,16 +28,16 @@ class Kcg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.1/kcg_0.8.1_linux_arm64.tar.gz"
-      sha256 "dd88fc279ef3573b3c555389ea47c028a1777b3df2c92d27116e39d60ee4fa68"
+      url "https://github.com/kumak1/kcg/releases/download/0.8.2/kcg_0.8.2_linux_arm64.tar.gz"
+      sha256 "cf6a85f218f10ddda4002f305c1e742f065e153a179b1dc1aafd2721d703b5c6"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.1/kcg_0.8.1_linux_amd64.tar.gz"
-      sha256 "009a6458115b4595142405286d88f0dc97d92992fadef0d252c99fd2bb23d039"
+      url "https://github.com/kumak1/kcg/releases/download/0.8.2/kcg_0.8.2_linux_amd64.tar.gz"
+      sha256 "b6c0e79449ee392731df7ba636070037bc2a5172a9c812307c45df1dec386013"
 
       def install
         bin.install Dir['kcg']
