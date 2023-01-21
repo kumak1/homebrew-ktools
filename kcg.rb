@@ -5,20 +5,20 @@
 class Kcg < Formula
   desc "kumak1 Convenient Git tools."
   homepage "https://github.com/kumak1/kcg"
-  version "0.8.5"
+  version "0.8.6"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.5/kcg_0.8.5_darwin_arm64.tar.gz"
-      sha256 "df8cd493871530c0491a24ab767a31883d0def4e293f5a338a28d25b622d32fb"
+    if Hardware::CPU.intel?
+      url "https://github.com/kumak1/kcg/releases/download/0.8.6/kcg_0.8.6_darwin_amd64.tar.gz"
+      sha256 "ba92931a3cf84e4d316e31687c2962ef7541c0c83356a8e6de3a5f9cd05db2b3"
 
       def install
         bin.install Dir['kcg']
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.5/kcg_0.8.5_darwin_amd64.tar.gz"
-      sha256 "53dc0dfc42cb8dfe14cbc8a7bc5795485d17597bea9bb942845c7dd16e87297e"
+    if Hardware::CPU.arm?
+      url "https://github.com/kumak1/kcg/releases/download/0.8.6/kcg_0.8.6_darwin_arm64.tar.gz"
+      sha256 "0ad0f6d8d1d4138d2c23af53ed75ef8d67beefae8351bccba3661c2efc81368e"
 
       def install
         bin.install Dir['kcg']
@@ -28,16 +28,16 @@ class Kcg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.5/kcg_0.8.5_linux_arm64.tar.gz"
-      sha256 "3933b54abde201cf70d74c754f2d1755be9a71c523fd2683a10134123fd87100"
+      url "https://github.com/kumak1/kcg/releases/download/0.8.6/kcg_0.8.6_linux_arm64.tar.gz"
+      sha256 "f05d9d288e0cd6c2b1248f52aa79b988ec1ecb5e50061b6e611b3ffe45017df1"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.8.5/kcg_0.8.5_linux_amd64.tar.gz"
-      sha256 "6aa5190b9647e2de686e7a4949245f79f5ba12bea5e429b10f1bba3892ba3b50"
+      url "https://github.com/kumak1/kcg/releases/download/0.8.6/kcg_0.8.6_linux_amd64.tar.gz"
+      sha256 "2873c6076f174ff8979a1a4559aac784d2cae36ba4b74de5bd08a617fb4b3729"
 
       def install
         bin.install Dir['kcg']
