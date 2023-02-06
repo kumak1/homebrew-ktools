@@ -5,20 +5,20 @@
 class Kcg < Formula
   desc "kumak1 Convenient Git tools."
   homepage "https://github.com/kumak1/kcg"
-  version "0.10.0"
+  version "0.10.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kumak1/kcg/releases/download/0.10.0/kcg_0.10.0_darwin_arm64.tar.gz"
-      sha256 "152c2c911e10e5f1da63b1ac7ab3b0fb8ed2f899d06f7f81c853ac3d0041f9b2"
+      url "https://github.com/kumak1/kcg/releases/download/0.10.1/kcg_0.10.1_darwin_arm64.tar.gz"
+      sha256 "43da7f3dfa31ee05091f8e1179fbf4a052960cc0ffdc805b5457669bf26486cb"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.10.0/kcg_0.10.0_darwin_amd64.tar.gz"
-      sha256 "2cb04ee5027a74e468aae95535387f45b0a46402cd64f1347942d2f20d75a9c4"
+      url "https://github.com/kumak1/kcg/releases/download/0.10.1/kcg_0.10.1_darwin_amd64.tar.gz"
+      sha256 "b4f5fca09023b328e18e095542d70277da427940279df7346e65491cbda11d54"
 
       def install
         bin.install Dir['kcg']
@@ -28,16 +28,16 @@ class Kcg < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumak1/kcg/releases/download/0.10.0/kcg_0.10.0_linux_arm64.tar.gz"
-      sha256 "540d247f5a90df54f159dc8a6593fb1d7ea7d16d3553ac25f6bd132a6f733d90"
+      url "https://github.com/kumak1/kcg/releases/download/0.10.1/kcg_0.10.1_linux_arm64.tar.gz"
+      sha256 "dbc3ef4a1bd7a7edfffa9bb760bf38f312fdf798e2c67d45402a5ba53fa94363"
 
       def install
         bin.install Dir['kcg']
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kumak1/kcg/releases/download/0.10.0/kcg_0.10.0_linux_amd64.tar.gz"
-      sha256 "48d4c6eb0170a9d6c46e6adc022966d1eec18c06ef71ecb2154c032c287f620d"
+      url "https://github.com/kumak1/kcg/releases/download/0.10.1/kcg_0.10.1_linux_amd64.tar.gz"
+      sha256 "6d9c542fc40182681c816da1e7aec540785d4166165345c519b34008da9fe887"
 
       def install
         bin.install Dir['kcg']
